@@ -1,0 +1,7 @@
+"0","Pa %>% "
+"0","  group_by(city) %>% "
+"0","  ggplot(mapping = aes(x = city,"
+"0","                       fill = country_name)) +"
+"0","  geom_bar() +"
+"0","  theme(axis.text.x=element_text(angle = -90,"
+"0","                                 hjust = 1))"

@@ -1,0 +1,5 @@
+"0","Pa %>% "
+"0","  ggplot(mapping = aes(x = isolation_source,"
+"0","                       fill = host_disease)) +"
+"0","  geom_bar() +"
+"0","  theme(axis.text.x=element_text(angle = -90, hjust = 0))"

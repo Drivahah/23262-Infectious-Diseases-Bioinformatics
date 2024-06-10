@@ -1,0 +1,17 @@
+"0","library(dplyr)
+"
+"2","il pacchetto ‘dplyr’ è stato creato con R versione 4.1.2"
+"2","
+Caricamento pacchetto: ‘dplyr’
+
+"
+"2","I seguenti oggetti sono mascherati da ‘package:stats’:
+
+    filter, lag
+
+"
+"2","I seguenti oggetti sono mascherati da ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+"

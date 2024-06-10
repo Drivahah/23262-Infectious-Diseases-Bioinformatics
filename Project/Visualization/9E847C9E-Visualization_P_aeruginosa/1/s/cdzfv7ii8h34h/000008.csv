@@ -1,0 +1,5 @@
+"0","setwd("".."")"
+"2","The working directory was changed to C:/Users/pf259/Desktop/23262 - Infectious diseases bioinformatics/Project inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks."
+"0","Pa <- read_xlsx(""Pseudomonas_aeruginosa"")"
+"2","Errore: `path` does not exist: ‘Pseudomonas_aeruginosa’
+"

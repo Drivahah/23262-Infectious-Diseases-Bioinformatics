@@ -1,0 +1,51 @@
+---
+title: "Visualization"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+```
+```{r}
+Pa <- read_xlsx("../Pseudomonas_aeruginosa.xlsx")
+Kp <- read_xlsx(("../Klebsiella_pneumoniae.xlsx"))
+```
+```{r}
+Pa %>% 
+  ggplot(mapping = aes(x = country_name)) +
+  geom_bar() +
+  theme(axis.text.x=element_text(angle = -90, hjust = 0))
+```
+```{r}
+Pa %>% 
+  group_by(city) %>% 
+  ggplot(mapping = aes(x = city,
+                       fill = country_name)) +
+  geom_bar() +
+  theme(axis.text.x=element_text(angle = -90,
+                                 hjust = 1))
+```
+
+```{r}
+Pa %>% 
+  ggplot(mapping = aes(x = isolation_source,
+                       fill = host_disease)) +
+  geom_bar() +
+  theme(axis.text.x=element_text(angle = -90, hjust = 0))
+```
+```{r}
+Kp %>% 
+  ggplot(mapping = aes(x = isolation_source,
+                       fill = host_disease)) +
+  geom_bar() +
+  theme(axis.text.x=element_text(angle = -90, hjust = 0))
+```
+```{r}
+Pa %>% 
+  ggplot(mapping = aes(x = isolation_source,
+                       fill = other_isolate_information)) +
+  geom_bar() +
+  theme(axis.text.x=element_text(angle = -90, hjust = 0))
+```
